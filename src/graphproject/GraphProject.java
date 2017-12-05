@@ -7,6 +7,7 @@ package graphproject;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -14,6 +15,8 @@ import java.util.Scanner;
  * @author jackson
  */
 public class GraphProject {
+    
+
 
     /**
      * @param args the command line arguments
@@ -40,12 +43,18 @@ public class GraphProject {
             }
             Prime.jobSeekers.add(temp);
             }
-//        Prime.printJobTitles();
-//        Prime.printJobSeekers();
-          Prime.getBestApplicant();
-        }
+        Prime.addPostion();
+        Prime.printJobTitles();
+        Prime.addApplicant();
+        Prime.printJobSeekers();
+        Prime.optimalSolution();
+//          System.out.println("Hello");
+          
+
+        
     
 
     }
+}
     
 
